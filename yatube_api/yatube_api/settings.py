@@ -98,6 +98,8 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
+    # https://pypi.org/project/drf-exceptions-hog/ Хотел поставить, но 3 теста не прошли, а штука дествительно прикольная
+    # "EXCEPTION_HANDLER": "exceptions_hog.exception_handler",
 }
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
